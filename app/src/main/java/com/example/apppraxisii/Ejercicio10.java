@@ -8,25 +8,25 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class Ejercicio5 extends AppCompatActivity {
+public class Ejercicio10 extends AppCompatActivity {
     private VG varGlob;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ejercicio5);
+        setContentView(R.layout.activity_ejercicio10);
 
         varGlob = (VG) getApplicationContext();
-        ImageView Bueno = findViewById(R.id.imagePulgarArriba5);
-        ImageView Malo = findViewById(R.id.imagePulgarAbajo5);
+        ImageView Bueno = findViewById(R.id.imagePulgarArriba10);
+        ImageView Malo = findViewById(R.id.imagePulgarAbajo10);
 
         Bueno.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 varGlob.iplusplusGlobalVariable();
                 System.out.println(varGlob.getGlobalVariable());
-                Toast.makeText(getApplicationContext(),"Excelente! \uD83D\uDE00", Toast.LENGTH_SHORT).show();
-                ejercicio6(view);
+                Toast.makeText(getApplicationContext(),"Muy bien! \uD83D\uDE00", Toast.LENGTH_SHORT).show();
+                ejercicio11(view);
             }
         });
 
@@ -34,15 +34,13 @@ public class Ejercicio5 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"Oh no \uD83D\uDE14", Toast.LENGTH_SHORT).show();
-                ejercicio6(view);
+                ejercicio11(view);
             }
         });
-
     }
 
-    public void ejercicio6(View view) {
-        Intent intent = new Intent(this, Ejercicio6.class);
+    public void ejercicio11(View view) {
+        Intent intent = new Intent(this, Ejercicio11.class);
         startActivity(intent);
     }
-
 }

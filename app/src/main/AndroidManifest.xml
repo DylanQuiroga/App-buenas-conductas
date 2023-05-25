@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:name=".VG"
@@ -11,7 +11,31 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppPraxisII"
-        tools:targetApi="31" >
+        tools:targetApi="31">
+        <activity
+            android:name=".Ejercicio13"
+            android:exported="false" />
+        <activity
+            android:name=".Ejercicio12"
+            android:exported="false" />
+        <activity
+            android:name=".Ejercicio11"
+            android:exported="false" />
+        <activity
+            android:name=".Ejercicio10"
+            android:exported="false" />
+        <activity
+            android:name=".Ejercicio9"
+            android:exported="false" />
+        <activity
+            android:name=".Ejercicio8"
+            android:exported="false" />
+        <activity
+            android:name=".Ejercicio7"
+            android:exported="false" />
+        <activity
+            android:name=".Ejercicio6"
+            android:exported="false" />
         <activity
             android:name=".Ejercicio5"
             android:exported="false" />
@@ -29,7 +53,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
