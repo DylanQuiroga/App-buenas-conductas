@@ -4,28 +4,27 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Html;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class Ejercicio1 extends AppCompatActivity {
+public class Ejercicio4 extends AppCompatActivity {
     private VG varGlob;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ejercicio1);
+        setContentView(R.layout.activity_ejercicio4);
 
         varGlob = (VG) getApplicationContext();
-        ImageView Bueno = findViewById(R.id.imagePulgarArriba);
-        ImageView Malo = findViewById(R.id.imagePulgarAbajo);
+        ImageView Bueno = findViewById(R.id.imagePulgarArriba4);
+        ImageView Malo = findViewById(R.id.imagePulgarAbajo4);
 
         Bueno.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"Oh no \uD83D\uDE14", Toast.LENGTH_SHORT).show();
-                ejercicio2(view);
+                ejercicio5(view);
             }
         });
 
@@ -34,16 +33,15 @@ public class Ejercicio1 extends AppCompatActivity {
             public void onClick(View view) {
                 varGlob.iplusplusGlobalVariable();
                 System.out.println(varGlob.getGlobalVariable());
-                Toast.makeText(getApplicationContext(),"Muy bien! \uD83D\uDE00", Toast.LENGTH_SHORT).show();
-                ejercicio2(view);
+                Toast.makeText(getApplicationContext(),"Bravo ! \uD83D\uDE00", Toast.LENGTH_SHORT).show();
+                ejercicio5(view);
             }
         });
 
     }
 
-    public void ejercicio2(View view) {
-        Intent intent = new Intent(this, Ejercicio2.class);
+    public void ejercicio5(View view) {
+        Intent intent = new Intent(this, Ejercicio5.class);
         startActivity(intent);
     }
-
 }

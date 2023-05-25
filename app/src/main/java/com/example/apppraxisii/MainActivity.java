@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         imageComenzar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                varGlob.ceroGlobalVariable();
                 ejercicio1(view);
             }
         });
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         imageSalir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                varGlob.ceroGlobalVariable();
                 finish();
             }
         });
