@@ -4,10 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Ejercicio13">
+    tools:context=".Ejercicio15">
 
     <ImageView
-        android:id="@+id/imagePulgarAbajo13"
+        android:id="@+id/imagePulgarArriba15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.784"
+        app:srcCompat="@mipmap/pulgararriba_foreground" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="210dp"
+        android:layout_height="211dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.241"
+        app:srcCompat="@mipmap/imageejer15_foreground" />
+
+    <ImageView
+        android:id="@+id/imagePulgarAbajo15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -18,41 +42,17 @@
         app:layout_constraintVertical_bias="0.782"
         app:srcCompat="@mipmap/pulgarabajo_foreground" />
 
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="210dp"
-        android:layout_height="211dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.241"
-        app:srcCompat="@mipmap/imageejer13_foreground" />
-
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/textView14"
         android:layout_width="210dp"
         android:layout_height="41dp"
         android:layout_marginTop="36dp"
         android:fontFamily="@font/holtwood_one_sc"
-        android:text="Ejercicio 13"
+        android:text="Ejercicio 15"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imagePulgarArriba13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.158"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.784"
-        app:srcCompat="@mipmap/pulgararriba_foreground" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,6 +13,18 @@
         android:theme="@style/Theme.AppPraxisII"
         tools:targetApi="31">
         <activity
+            android:name=".TablaPuntaje"
+            android:exported="false" />
+        <activity
+            android:name=".PuntajeFinal"
+            android:exported="false" />
+        <activity
+            android:name=".Ejercicio15"
+            android:exported="false" />
+        <activity
+            android:name=".Ejercicio14"
+            android:exported="false" />
+        <activity
             android:name=".Ejercicio13"
             android:exported="false" />
         <activity

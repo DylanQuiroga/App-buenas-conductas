@@ -4,55 +4,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Ejercicio13">
+    tools:context=".PuntajeFinal">
 
     <ImageView
-        android:id="@+id/imagePulgarAbajo13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/imageView17"
+        android:layout_width="165dp"
+        android:layout_height="163dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.848"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.782"
-        app:srcCompat="@mipmap/pulgarabajo_foreground" />
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="210dp"
-        android:layout_height="211dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.241"
-        app:srcCompat="@mipmap/imageejer13_foreground" />
+        app:layout_constraintVertical_bias="0.07"
+        app:srcCompat="@mipmap/imagegenial_foreground" />
 
     <TextView
-        android:id="@+id/textView12"
-        android:layout_width="210dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="36dp"
+        android:id="@+id/textView15"
+        android:layout_width="267dp"
+        android:layout_height="37dp"
         android:fontFamily="@font/holtwood_one_sc"
-        android:text="Ejercicio 13"
+        android:text="Ingresa tu nombre"
         android:textAlignment="center"
-        android:textSize="24sp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.478" />
 
     <ImageView
-        android:id="@+id/imagePulgarArriba13"
+        android:id="@+id/check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.784"
-        app:srcCompat="@mipmap/pulgararriba_foreground" />
+        app:layout_constraintVertical_bias="0.793"
+        app:srcCompat="@mipmap/imagecheck_foreground" />
 </androidx.constraintlayout.widget.ConstraintLayout>

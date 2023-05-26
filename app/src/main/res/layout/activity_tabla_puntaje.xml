@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TablaPuntaje">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="312dp"
+        android:layout_height="356dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.297">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textNombre"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:fontFamily="@font/holtwood_one_sc"
+                android:gravity="center"
+                android:text="Nombre" />
+
+            <TextView
+                android:id="@+id/textPuntaje"
+                android:layout_width="161dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:fontFamily="@font/holtwood_one_sc"
+                android:gravity="center"
+                android:text="Puntaje" />
+        </TableRow>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center" />
+
+
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="284dp"
+        android:layout_height="47dp"
+        android:fontFamily="@font/holtwood_one_sc"
+        android:text="Tabla de puntaje"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <ImageView
+        android:id="@+id/flecha"
+        android:layout_width="85dp"
+        android:layout_height="73dp"
+        android:rotation="-56"
+        android:rotationX="176"
+        android:rotationY="176"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        app:srcCompat="@mipmap/flecha_foreground" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

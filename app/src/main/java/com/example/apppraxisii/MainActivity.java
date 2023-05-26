@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         varGlob = (VG) getApplicationContext();
         ImageView imageComenzar = findViewById(R.id.imageComenzar);
         ImageView imageSalir = findViewById(R.id.imageSalir);
+        ImageView imagePuntos = findViewById(R.id.puntos);
 
         imageComenzar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,10 +36,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        imagePuntos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tabla(view);
+            }
+        });
+
     }
 
     public void ejercicio1(View view) {
         Intent intent = new Intent(this, Ejercicio1.class);
+        startActivity(intent);
+    }
+
+    public void tabla(View view) {
+        Intent intent = new Intent(this, TablaPuntaje.class);
         startActivity(intent);
     }
 

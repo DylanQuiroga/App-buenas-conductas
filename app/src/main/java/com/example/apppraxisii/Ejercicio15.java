@@ -8,39 +8,39 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class Ejercicio13 extends AppCompatActivity {
+public class Ejercicio15 extends AppCompatActivity {
     private VG varGlob;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ejercicio13);
+        setContentView(R.layout.activity_ejercicio15);
 
         varGlob = (VG) getApplicationContext();
-        ImageView Bueno = findViewById(R.id.imagePulgarArriba13);
-        ImageView Malo = findViewById(R.id.imagePulgarAbajo13);
+        ImageView Bueno = findViewById(R.id.imagePulgarArriba15);
+        ImageView Malo = findViewById(R.id.imagePulgarAbajo15);
 
         Bueno.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"Oh no \uD83D\uDE14", Toast.LENGTH_SHORT).show();
-                ejercicio14(view);
+                varGlob.iplusplusGlobalVariable();
+                System.out.println(varGlob.getGlobalVariable());
+                Toast.makeText(getApplicationContext(),"Bien! \uD83D\uDE00", Toast.LENGTH_SHORT).show();
+                puntajeFinal(view);
             }
         });
 
         Malo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                varGlob.iplusplusGlobalVariable();
-                System.out.println(varGlob.getGlobalVariable());
-                Toast.makeText(getApplicationContext(),"Excelente! \uD83D\uDE00", Toast.LENGTH_SHORT).show();
-                ejercicio14(view);
+                Toast.makeText(getApplicationContext(),"Oh no \uD83D\uDE14", Toast.LENGTH_SHORT).show();
+                puntajeFinal(view);
             }
         });
     }
 
-    public void ejercicio14(View view) {
-        Intent intent = new Intent(this, Ejercicio14.class);
+    public void puntajeFinal(View view) {
+        Intent intent = new Intent(this, PuntajeFinal.class);
         startActivity(intent);
     }
 }

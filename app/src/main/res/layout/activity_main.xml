@@ -58,4 +58,16 @@
         app:layout_constraintVertical_bias="0.785"
         app:srcCompat="@mipmap/imageexit_foreground"
         tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/puntos"
+        android:layout_width="46dp"
+        android:layout_height="47dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.989"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.008"
+        app:srcCompat="@mipmap/puntaje_foreground" />
 </androidx.constraintlayout.widget.ConstraintLayout>
