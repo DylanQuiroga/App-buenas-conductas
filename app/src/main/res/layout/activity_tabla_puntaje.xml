@@ -8,14 +8,14 @@
 
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="312dp"
-        android:layout_height="356dp"
+        android:layout_width="161dp"
+        android:layout_height="364dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.184"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.297">
+        app:layout_constraintVertical_bias="0.322">
 
         <TableRow
             android:layout_width="match_parent"
@@ -24,29 +24,20 @@
 
             <TextView
                 android:id="@+id/textNombre"
-                android:layout_width="155dp"
+                android:layout_width="145dp"
                 android:layout_height="wrap_content"
                 android:layout_column="1"
                 android:fontFamily="@font/holtwood_one_sc"
                 android:gravity="center"
                 android:text="Nombre" />
 
-            <TextView
-                android:id="@+id/textPuntaje"
-                android:layout_width="161dp"
-                android:layout_height="wrap_content"
-                android:layout_column="2"
-                android:fontFamily="@font/holtwood_one_sc"
-                android:gravity="center"
-                android:text="Puntaje" />
         </TableRow>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
+            android:layout_width="153dp"
             android:layout_height="wrap_content"
             android:textAlignment="center" />
-
 
 
     </TableLayout>
@@ -78,5 +69,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout"
         app:srcCompat="@mipmap/flecha_foreground" />
+
+    <TableLayout
+        android:layout_width="163dp"
+        android:layout_height="364dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.834"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.322">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="37dp">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/holtwood_one_sc"
+                android:text="Puntaje"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView1"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center" />
+
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,9 +25,13 @@ public class TablaPuntaje extends AppCompatActivity {
         ImageView flecha = findViewById(R.id.flecha);
 
         RecyclerView rv = (RecyclerView) findViewById(R.id.recyclerView);
+        RecyclerView rv1 = (RecyclerView) findViewById(R.id.recyclerView1);
         rv.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
+        rv1.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         ArrayList<String> listDatos;
         listDatos = new ArrayList<String>();
+        ArrayList<String> listDatos1;
+        listDatos1 = new ArrayList<String>();
 
         DataBase db = new DataBase(getApplicationContext());
         HashMap<String, Integer> datosDiccionario = db.obtenerDatosComoDiccionario();
@@ -43,11 +47,15 @@ public class TablaPuntaje extends AppCompatActivity {
             String nombre = entry.getKey();
             int puntaje = entry.getValue();
 
-            listDatos.add(nombre +"........................................................"+ puntaje);
+            listDatos.add("               "+nombre);
+            listDatos1.add("                 "+puntaje);
         }
 
         Modelo adapter = new Modelo(listDatos);
         rv.setAdapter(adapter);
+
+        Modelo adapter1 = new Modelo(listDatos1);
+        rv1.setAdapter(adapter1);
 
         flecha.setOnClickListener(new View.OnClickListener() {
             @Override

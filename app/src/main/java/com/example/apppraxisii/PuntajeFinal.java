@@ -31,7 +31,7 @@ public class PuntajeFinal extends AppCompatActivity {
 
                 db.insertarPuntaje(name,puntaje);
                 db.imprimirTabla();
-
+                finish();
                 Menu(view);
             }
         });

@@ -26,6 +26,7 @@ public class Ejercicio15 extends AppCompatActivity {
                 varGlob.iplusplusGlobalVariable();
                 System.out.println(varGlob.getGlobalVariable());
                 Toast.makeText(getApplicationContext(),"Bien! \uD83D\uDE00", Toast.LENGTH_SHORT).show();
+                finish();
                 puntajeFinal(view);
             }
         });
@@ -34,6 +35,7 @@ public class Ejercicio15 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"Oh no \uD83D\uDE14", Toast.LENGTH_SHORT).show();
+                finish();
                 puntajeFinal(view);
             }
         });
